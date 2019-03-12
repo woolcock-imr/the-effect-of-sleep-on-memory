@@ -1,0 +1,65 @@
+<div class='nav__ID'>
+    <h1>Evening</h1>
+    <ul>
+        <li><a href=?/e-kss-data>Karolinska Sleepiness Scale</a></li>
+        <li><a href=?/e-psqi-data>Pittsburgh Sleep Quality Index</a></li>
+        <li><a href=?/e-isi-data>Insomnia Severity Index</a></li>
+        <li><a href=?/e-ess-data>Epworth Sleepiness Score</a></li>
+    </ul>
+</div>
+
+<div class='nav__ID'>
+    <h1>Morning</h1>
+    <ul>
+        <li><a href=?/m-kss-data>Karolinska Sleepiness Scale</a></li>
+    </ul>
+</div>
+
+<div class='nav__ID'>
+    <h1>Other tests</h1>
+    <ul>
+        <li><a href=?/o-dass-data>DASS</a></li>
+        <li><a href=?/o-gds-data>GDS</a></li>
+        <li><a href=?/o-hads-data>Hospital Anxiety and Depression Scale</a></li>
+    </ul>
+</div>
+
+<style>
+    ul {
+        padding-left:20px;
+    }
+    li {
+        list-style:square;
+    }
+    /* 
+     li:before {
+        content:"·";
+        font-size:90px;
+        vertical-align:middle;
+        line-height:14px;
+    }  */
+    h1 {
+        text-transform: uppercase;
+        font-size: 12pt;
+        font-weight: bold;
+        border-top: rgba(60,60,60,1) solid 1px;
+        padding: 5px;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 10pt;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .red {
+        color:red;
+    }
+</style>
+
+<script>
+$("li").each(function() {
+    $(this).on("click",function() {
+        $(this).toggleClass("red");
+    });
+});
+</script>

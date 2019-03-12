@@ -1,0 +1,20 @@
+<div id=D__ID>
+    <section>
+        VmInclude:__COMPONENT__/g/grid.01.html
+    </section>
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:__COMPONENT__/g/grid.01.js
+            VmInclude:__CURRENT_PATH__/task-data.js
+            //-------------------------------------
+            var fields="HADS_1,HADS_2,HADS_3,HADS_4,HADS_5,HADS_6,HADS_7,HADS_8,HADS_9,HADS_10,HADS_11,HADS_12,HADS_13,HADS_14,HADS_A,HADS_D";
+            m.fields="_Form,Status|S3,Notes|NT,Participant_ID|Participant_uid,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+            m.fields_e="Participant_ID,"+fields
+        }
+    </script>
+    <style>
+        VmInclude:__COMPONENT__/g/grid.01.css
+    </style>
+</div>
+    
